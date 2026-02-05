@@ -1,11 +1,12 @@
 package org.eternity.movie.step01copy.pricing;
 
 import org.eternity.money.step01copy.Money;
+import org.eternity.movie.step01copy.DefaultDiscountPolicy;
 import org.eternity.movie.step01copy.DiscountCondition;
 import org.eternity.movie.step01copy.DiscountPolicy;
 import org.eternity.movie.step01copy.Screening;
 
-public class AmountDiscountPolicy extends DiscountPolicy {
+public class AmountDiscountPolicy extends DefaultDiscountPolicy {
     private Money discountAmount;
 
     public AmountDiscountPolicy(Money discountAmount, DiscountCondition... conditions) {

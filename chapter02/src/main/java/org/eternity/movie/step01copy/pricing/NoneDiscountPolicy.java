@@ -4,10 +4,9 @@ import org.eternity.money.step01copy.Money;
 import org.eternity.movie.step01copy.DiscountPolicy;
 import org.eternity.movie.step01copy.Screening;
 
-public class NoneDiscountPolicy extends DiscountPolicy {
-
+public class NoneDiscountPolicy implements DiscountPolicy {
     @Override
-    protected Money getDiscountAmount(Screening screening) {
+    public Money calculateDiscountAmount(Screening screening) {
         return Money.ZERO;
     }
 }
