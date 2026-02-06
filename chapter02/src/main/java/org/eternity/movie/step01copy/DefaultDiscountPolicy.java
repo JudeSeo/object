@@ -2,12 +2,12 @@ package org.eternity.movie.step01copy;
 
 import org.eternity.money.step01copy.Money;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public abstract class DefaultDiscountPolicy implements DiscountPolicy{
-    private List<DiscountCondition> conditions = new ArrayList<>();
+    // 1개의 할인 정책에 여러개의 할인 조건 가능.
+    private List<DiscountCondition> conditions;
 
     public DefaultDiscountPolicy(DiscountCondition... conditions) {
         this.conditions = Arrays.asList(conditions);

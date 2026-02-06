@@ -3,7 +3,8 @@ package org.eternity.money.step01copy;
 import java.math.BigDecimal;
 
 /**
- *
+ * long 타입은 저장된 값이 금액과 관련되어 있다는 의미를 전달할 수 없다.
+ * 그렇기에 Money 객체 사용
  */
 public class Money {
     public static final Money ZERO = Money.wons(0);
